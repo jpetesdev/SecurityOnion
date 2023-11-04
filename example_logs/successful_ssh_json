@@ -1,0 +1,348 @@
+{
+  "_index": ".ds-logs-zeek-so-2023.10.26-000001",
+  "_id": "3ZdKlYsB2fbLpb1fxfKx",
+  "_version": 1,
+  "_score": 0,
+  "_source": {
+    "container": {
+      "id": "ssh.log"
+    },
+    "server": {
+      "port": "22",
+      "ip": "192.168.1.65"
+    },
+    "log": {
+      "file": {
+        "path": "/nsm/zeek/logs/current/ssh.log"
+      },
+      "offset": 0,
+      "id": {
+        "uid": "CjzJlCTjrH5YNjmxk"
+      }
+    },
+    "elastic_agent": {
+      "id": "df990f14-d46c-48b8-8959-84745839c4e1",
+      "version": "8.8.2",
+      "snapshot": false
+    },
+    "destination": {
+      "port": 22,
+      "ip": "192.168.1.65"
+    },
+    "source_geo": {
+      "ip": "129.130.18.135",
+      "organization_name": "KSU-NET",
+      "asn": 2701,
+      "network": "129.130.0.0/16"
+    },
+    "ssh": {
+      "server": "SSH-2.0-Cisco-1.25",
+      "mac_algorithm": "hmac-sha1",
+      "hassh_server_algorithms": "diffie-hellman-group1-sha1;aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc;hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96;none",
+      "compression_algorithm": "none",
+      "client_host_key_algorithms": "rsa-sha2-512,rsa-sha2-256,ssh-rsa,ssh-ed448,ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-dss",
+      "hassh_algorithms": "sntrup761x25519-sha512@openssh.com,curve448-sha512,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group18-sha512,diffie-hellman-group17-sha512,diffie-hellman-group16-sha512,diffie-hellman-group15-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,rsa2048-sha256,rsa1024-sha1,diffie-hellman-group1-sha1,ext-info-c;aes256-ctr,aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,3des-ctr,3des-cbc,blowfish-ctr,blowfish-cbc,arcfour256,arcfour128;hmac-sha2-256,hmac-sha1,hmac-sha1-96,hmac-md5,hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-etm@openssh.com;none,zlib,zlib@openssh.com",
+      "server_host_key_algorithms": "ssh-rsa",
+      "hassh_server": "3cc67862bceac0f334c62ad1b76895b4",
+      "version": 2,
+      "kex_algorithm": "diffie-hellman-group1-sha1",
+      "cipher_algorithm": "aes256-cbc",
+      "host_key": "5e:cc:b4:b2:e1:8e:c4:f9:aa:62:f4:bf:2a:a8:92:fb",
+      "host_key_algorithm": "ssh-rsa",
+      "client": "SSH-2.0-PuTTY_Release_0.78",
+      "hassh_version": "1.1",
+      "authentication": {
+        "success": true,
+        "attempts": 1
+      },
+      "direction": "INBOUND"
+    },
+    "source": {
+      "geo": {
+        "region_iso_code": "US-KS",
+        "continent_name": "North America",
+        "city_name": "Manhattan",
+        "country_iso_code": "US",
+        "timezone": "America/Chicago",
+        "ip": "129.130.18.135",
+        "country_name": "United States",
+        "region_name": "Kansas",
+        "location": {
+          "lon": -96.5818,
+          "lat": 39.1918
+        }
+      },
+      "port": 49182,
+      "ip": "129.130.18.135"
+    },
+    "message": "{\"ts\":1699016776.301244,\"uid\":\"CjzJlCTjrH5YNjmxk\",\"id.orig_h\":\"129.130.18.135\",\"id.orig_p\":49182,\"id.resp_h\":\"192.168.1.65\",\"id.resp_p\":22,\"version\":2,\"auth_success\":true,\"auth_attempts\":1,\"direction\":\"INBOUND\",\"client\":\"SSH-2.0-PuTTY_Release_0.78\",\"server\":\"SSH-2.0-Cisco-1.25\",\"cipher_alg\":\"aes256-cbc\",\"mac_alg\":\"hmac-sha1\",\"compression_alg\":\"none\",\"kex_alg\":\"diffie-hellman-group1-sha1\",\"host_key_alg\":\"ssh-rsa\",\"host_key\":\"5e:cc:b4:b2:e1:8e:c4:f9:aa:62:f4:bf:2a:a8:92:fb\",\"hasshVersion\":\"1.1\",\"hassh\":\"1cfeb5018d091f0b2c28098dd046d4d5\",\"hasshServer\":\"3cc67862bceac0f334c62ad1b76895b4\",\"cshka\":\"rsa-sha2-512,rsa-sha2-256,ssh-rsa,ssh-ed448,ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-dss\",\"hasshAlgorithms\":\"sntrup761x25519-sha512@openssh.com,curve448-sha512,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group18-sha512,diffie-hellman-group17-sha512,diffie-hellman-group16-sha512,diffie-hellman-group15-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,rsa2048-sha256,rsa1024-sha1,diffie-hellman-group1-sha1,ext-info-c;aes256-ctr,aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,3des-ctr,3des-cbc,blowfish-ctr,blowfish-cbc,arcfour256,arcfour128;hmac-sha2-256,hmac-sha1,hmac-sha1-96,hmac-md5,hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-etm@openssh.com;none,zlib,zlib@openssh.com\",\"sshka\":\"ssh-rsa\",\"hasshServerAlgorithms\":\"diffie-hellman-group1-sha1;aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc;hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96;none\"}",
+    "tags": [
+      "ssh"
+    ],
+    "pipeline": "ssh",
+    "input": {
+      "type": "log"
+    },
+    "observer": {
+      "name": "onionknight"
+    },
+    "@timestamp": "2023-11-03T13:06:16.301Z",
+    "ecs": {
+      "version": "8.0.0"
+    },
+    "data_stream": {
+      "namespace": "so",
+      "type": "logs",
+      "dataset": "zeek"
+    },
+    "client": {
+      "port": "49182",
+      "ip": "129.130.18.135"
+    },
+    "event": {
+      "ingested": "2023-11-03T13:06:27.136Z",
+      "module": "zeek",
+      "category": "network",
+      "dataset": "zeek.ssh"
+    },
+    "hash": {
+      "hassh": "1cfeb5018d091f0b2c28098dd046d4d5"
+    }
+  },
+  "fields": {
+    "ssh.version": [
+      2
+    ],
+    "log.id.uid": [
+      "CjzJlCTjrH5YNjmxk"
+    ],
+    "elastic_agent.version": [
+      "8.8.2"
+    ],
+    "event.category": [
+      "network"
+    ],
+    "event.category.keyword": [
+      "network"
+    ],
+    "event.dataset.keyword": [
+      "zeek.ssh"
+    ],
+    "server.ip": [
+      "192.168.1.65"
+    ],
+    "ssh.authentication.attempts": [
+      1
+    ],
+    "container.id": [
+      "ssh.log"
+    ],
+    "ssh.hassh_server_algorithms": [
+      "diffie-hellman-group1-sha1;aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc;hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96;none"
+    ],
+    "ssh.hassh_server": [
+      "3cc67862bceac0f334c62ad1b76895b4"
+    ],
+    "ecs.version.keyword": [
+      "8.0.0"
+    ],
+    "ssh.compression_algorithm": [
+      "none"
+    ],
+    "source.geo.region_name": [
+      "Kansas"
+    ],
+    "ssh.mac_algorithm": [
+      "hmac-sha1"
+    ],
+    "source.ip": [
+      "129.130.18.135"
+    ],
+    "source.geo.region_iso_code": [
+      "US-KS"
+    ],
+    "source_geo.network": [
+      "129.130.0.0/16"
+    ],
+    "source.geo.city_name": [
+      "Manhattan"
+    ],
+    "source.port.keyword": [
+      "49182"
+    ],
+    "source_geo.asn": [
+      2701
+    ],
+    "ssh.host_key": [
+      "5e:cc:b4:b2:e1:8e:c4:f9:aa:62:f4:bf:2a:a8:92:fb"
+    ],
+    "input.type": [
+      "log"
+    ],
+    "ssh.host_key_algorithm": [
+      "ssh-rsa"
+    ],
+    "log.offset": [
+      0
+    ],
+    "client.ip": [
+      "129.130.18.135"
+    ],
+    "data_stream.type": [
+      "logs"
+    ],
+    "ssh.server_host_key_algorithms": [
+      "ssh-rsa"
+    ],
+    "tags": [
+      "ssh"
+    ],
+    "ssh.cipher_algorithm": [
+      "aes256-cbc"
+    ],
+    "destination.ip.keyword": [
+      "192.168.1.65"
+    ],
+    "source.port": [
+      49182
+    ],
+    "ecs.version": [
+      "8.0.0"
+    ],
+    "client.port": [
+      49182
+    ],
+    "source.geo.timezone": [
+      "America/Chicago"
+    ],
+    "message.keyword": [
+      "{\"ts\":1699016776.301244,\"uid\":\"CjzJlCTjrH5YNjmxk\",\"id.orig_h\":\"129.130.18.135\",\"id.orig_p\":49182,\"id.resp_h\":\"192.168.1.65\",\"id.resp_p\":22,\"version\":2,\"auth_success\":true,\"auth_attempts\":1,\"direction\":\"INBOUND\",\"client\":\"SSH-2.0-PuTTY_Release_0.78\",\"server\":\"SSH-2.0-Cisco-1.25\",\"cipher_alg\":\"aes256-cbc\",\"mac_alg\":\"hmac-sha1\",\"compression_alg\":\"none\",\"kex_alg\":\"diffie-hellman-group1-sha1\",\"host_key_alg\":\"ssh-rsa\",\"host_key\":\"5e:cc:b4:b2:e1:8e:c4:f9:aa:62:f4:bf:2a:a8:92:fb\",\"hasshVersion\":\"1.1\",\"hassh\":\"1cfeb5018d091f0b2c28098dd046d4d5\",\"hasshServer\":\"3cc67862bceac0f334c62ad1b76895b4\",\"cshka\":\"rsa-sha2-512,rsa-sha2-256,ssh-rsa,ssh-ed448,ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-dss\",\"hasshAlgorithms\":\"sntrup761x25519-sha512@openssh.com,curve448-sha512,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group18-sha512,diffie-hellman-group17-sha512,diffie-hellman-group16-sha512,diffie-hellman-group15-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,rsa2048-sha256,rsa1024-sha1,diffie-hellman-group1-sha1,ext-info-c;aes256-ctr,aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,3des-ctr,3des-cbc,blowfish-ctr,blowfish-cbc,arcfour256,arcfour128;hmac-sha2-256,hmac-sha1,hmac-sha1-96,hmac-md5,hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-etm@openssh.com;none,zlib,zlib@openssh.com\",\"sshka\":\"ssh-rsa\",\"hasshServerAlgorithms\":\"diffie-hellman-group1-sha1;aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc;hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96;none\"}"
+    ],
+    "event.module.keyword": [
+      "zeek"
+    ],
+    "source.ip.keyword": [
+      "129.130.18.135"
+    ],
+    "ssh.hassh_algorithms": [
+      "sntrup761x25519-sha512@openssh.com,curve448-sha512,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group18-sha512,diffie-hellman-group17-sha512,diffie-hellman-group16-sha512,diffie-hellman-group15-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,rsa2048-sha256,rsa1024-sha1,diffie-hellman-group1-sha1,ext-info-c;aes256-ctr,aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,3des-ctr,3des-cbc,blowfish-ctr,blowfish-cbc,arcfour256,arcfour128;hmac-sha2-256,hmac-sha1,hmac-sha1-96,hmac-md5,hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-etm@openssh.com;none,zlib,zlib@openssh.com"
+    ],
+    "destination.port": [
+      22
+    ],
+    "observer.name": [
+      "onionknight"
+    ],
+    "tags.keyword": [
+      "ssh"
+    ],
+    "source.geo.location": [
+      {
+        "coordinates": [
+          -96.5818,
+          39.1918
+        ],
+        "type": "Point"
+      }
+    ],
+    "ssh.hassh_version": [
+      "1.1"
+    ],
+    "observer.name.keyword": [
+      "onionknight"
+    ],
+    "event.module": [
+      "zeek"
+    ],
+    "hash.hassh": [
+      "1cfeb5018d091f0b2c28098dd046d4d5"
+    ],
+    "ssh.client": [
+      "SSH-2.0-PuTTY_Release_0.78"
+    ],
+    "source_geo.ip": [
+      "129.130.18.135"
+    ],
+    "source.geo.country_iso_code": [
+      "US"
+    ],
+    "server.port": [
+      22
+    ],
+    "source.geo.ip": [
+      "129.130.18.135"
+    ],
+    "event.ingested.keyword": [
+      "2023-11-03T13:06:27.136Z"
+    ],
+    "elastic_agent.snapshot": [
+      false
+    ],
+    "destination.port.keyword": [
+      "22"
+    ],
+    "elastic_agent.id": [
+      "df990f14-d46c-48b8-8959-84745839c4e1"
+    ],
+    "data_stream.namespace": [
+      "so"
+    ],
+    "source.geo.continent_name": [
+      "North America"
+    ],
+    "source_geo.ip.keyword": [
+      "129.130.18.135"
+    ],
+    "message": [
+      "{\"ts\":1699016776.301244,\"uid\":\"CjzJlCTjrH5YNjmxk\",\"id.orig_h\":\"129.130.18.135\",\"id.orig_p\":49182,\"id.resp_h\":\"192.168.1.65\",\"id.resp_p\":22,\"version\":2,\"auth_success\":true,\"auth_attempts\":1,\"direction\":\"INBOUND\",\"client\":\"SSH-2.0-PuTTY_Release_0.78\",\"server\":\"SSH-2.0-Cisco-1.25\",\"cipher_alg\":\"aes256-cbc\",\"mac_alg\":\"hmac-sha1\",\"compression_alg\":\"none\",\"kex_alg\":\"diffie-hellman-group1-sha1\",\"host_key_alg\":\"ssh-rsa\",\"host_key\":\"5e:cc:b4:b2:e1:8e:c4:f9:aa:62:f4:bf:2a:a8:92:fb\",\"hasshVersion\":\"1.1\",\"hassh\":\"1cfeb5018d091f0b2c28098dd046d4d5\",\"hasshServer\":\"3cc67862bceac0f334c62ad1b76895b4\",\"cshka\":\"rsa-sha2-512,rsa-sha2-256,ssh-rsa,ssh-ed448,ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-dss\",\"hasshAlgorithms\":\"sntrup761x25519-sha512@openssh.com,curve448-sha512,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group18-sha512,diffie-hellman-group17-sha512,diffie-hellman-group16-sha512,diffie-hellman-group15-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,rsa2048-sha256,rsa1024-sha1,diffie-hellman-group1-sha1,ext-info-c;aes256-ctr,aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,3des-ctr,3des-cbc,blowfish-ctr,blowfish-cbc,arcfour256,arcfour128;hmac-sha2-256,hmac-sha1,hmac-sha1-96,hmac-md5,hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-etm@openssh.com;none,zlib,zlib@openssh.com\",\"sshka\":\"ssh-rsa\",\"hasshServerAlgorithms\":\"diffie-hellman-group1-sha1;aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc;hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96;none\"}"
+    ],
+    "destination.ip": [
+      "192.168.1.65"
+    ],
+    "pipeline": [
+      "ssh"
+    ],
+    "ssh.authentication.success": [
+      true
+    ],
+    "event.ingested": [
+      "2023-11-03T13:06:27.136Z"
+    ],
+    "@timestamp": [
+      "2023-11-03T13:06:16.301Z"
+    ],
+    "source_geo.organization_name": [
+      "KSU-NET"
+    ],
+    "log.file.path": [
+      "/nsm/zeek/logs/current/ssh.log"
+    ],
+    "data_stream.dataset": [
+      "zeek"
+    ],
+    "source.geo.country_name.keyword": [
+      "United States"
+    ],
+    "ssh.kex_algorithm": [
+      "diffie-hellman-group1-sha1"
+    ],
+    "source.geo.ip.keyword": [
+      "129.130.18.135"
+    ],
+    "source.geo.country_name": [
+      "United States"
+    ],
+    "ssh.direction": [
+      "INBOUND"
+    ],
+    "event.dataset": [
+      "zeek.ssh"
+    ],
+    "ssh.client_host_key_algorithms": [
+      "rsa-sha2-512,rsa-sha2-256,ssh-rsa,ssh-ed448,ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-dss"
+    ],
+    "ssh.server": [
+      "SSH-2.0-Cisco-1.25"
+    ]
+  }
+}
