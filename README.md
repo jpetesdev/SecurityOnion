@@ -23,9 +23,9 @@ What will you learn?
 *****************************************************
 What do you need to get started with Security Onion?
 *****************************************************
-1. A home internet connection. (This should be a given, but leaven no stone unturned)
+1. A home internet connection. 
 2. A managed switch.
-   I'm a CISCO Stan so I have a used Cisco Catalyst 2960 with 52 ports.
+   I have a used Cisco Catalyst 2960 with 52 ports.
    You can by a used one for less than $50 off of eBay. Just make sure you also get a console cable for first time setup.
    If you don't have a networking background with CISCO, you can get any other kind of managed switch and use the web GUI like a noob.
    One of the switch interfaces must be set as a SPAN/Mirror port so that it can collect the live traffic.
@@ -34,12 +34,13 @@ What do you need to get started with Security Onion?
    This can be virtualized, however, that is not how I completed my project. I repurposed an old PC.
    Hardware Requirements: https://docs.securityonion.net/en/2.4/hardware.html
    The critical thing is that your device needs to have two NICs: One for your standard network connection and the other as a log collection
+   From my personal experience, I would recommend at least 16GB of RAM
 
-4. USB for Security Onion Image
+5. USB for Security Onion Image
    SO Image: https://github.com/Security-Onion-Solutions/securityonion/blob/2.4/main/DOWNLOAD_AND_VERIFY_ISO.md
    You will make a bootable flash with the ISO just like any other OS you are trying to boot.
 
-5. Ethernet Cables
+6. Ethernet Cables
 
 
 
