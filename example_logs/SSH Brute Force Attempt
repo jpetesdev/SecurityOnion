@@ -1,0 +1,344 @@
+
+  "_index": ".ds-logs-zeek-so-2023.10.26-000001",
+  "_id": "SpnulYsB2fbLpb1fngOj",
+  "_version": 1,
+  "_score": 0,
+  "_source": {
+    "container": {
+      "id": "ssh.log"
+    },
+    "server": {
+      "port": "22",
+      "ip": "192.168.1.65"
+    },
+    "log": {
+      "file": {
+        "path": "/nsm/zeek/logs/current/ssh.log"
+      },
+      "offset": 14048,
+      "id": {
+        "uid": "CZ6XXNMhZz6wbmVKg"
+      }
+    },
+    "elastic_agent": {
+      "id": "df990f14-d46c-48b8-8959-84745839c4e1",
+      "version": "8.8.2",
+      "snapshot": false
+    },
+    "destination": {
+      "port": 22,
+      "ip": "192.168.1.65"
+    },
+    "source_geo": {
+      "ip": "8.218.180.96",
+      "organization_name": "Alibaba US Technology Co., Ltd.",
+      "asn": 45102,
+      "network": "8.218.0.0/15"
+    },
+    "ssh": {
+      "server": "SSH-2.0-Cisco-1.25",
+      "mac_algorithm": "hmac-sha1",
+      "hassh_server_algorithms": "diffie-hellman-group1-sha1;aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc;hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96;none",
+      "compression_algorithm": "none",
+      "client_host_key_algorithms": "ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,ssh-dss",
+      "hassh_algorithms": "curve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1;aes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc;hmac-sha2-256,hmac-sha2-512,hmac-sha1;none",
+      "server_host_key_algorithms": "ssh-rsa",
+      "hassh_server": "3cc67862bceac0f334c62ad1b76895b4",
+      "version": 2,
+      "kex_algorithm": "diffie-hellman-group1-sha1",
+      "cipher_algorithm": "aes256-cbc",
+      "host_key": "5e:cc:b4:b2:e1:8e:c4:f9:aa:62:f4:bf:2a:a8:92:fb",
+      "host_key_algorithm": "ssh-rsa",
+      "client": "SSH-2.0-libssh_0.7.4",
+      "hassh_version": "1.1",
+      "authentication": {
+        "attempts": 0
+      },
+      "direction": "INBOUND"
+    },
+    "source": {
+      "geo": {
+        "region_iso_code": "HK-HCW",
+        "continent_name": "Asia",
+        "city_name": "Hong Kong",
+        "country_iso_code": "HK",
+        "timezone": "Asia/Hong_Kong",
+        "ip": "8.218.180.96",
+        "country_name": "Hong Kong",
+        "region_name": "Central and Western District",
+        "location": {
+          "lon": 114.1759,
+          "lat": 22.2842
+        }
+      },
+      "port": 59190,
+      "ip": "8.218.180.96"
+    },
+    "message": "{\"ts\":1699027515.911595,\"uid\":\"CZ6XXNMhZz6wbmVKg\",\"id.orig_h\":\"8.218.180.96\",\"id.orig_p\":59190,\"id.resp_h\":\"192.168.1.65\",\"id.resp_p\":22,\"version\":2,\"auth_attempts\":0,\"direction\":\"INBOUND\",\"client\":\"SSH-2.0-libssh_0.7.4\",\"server\":\"SSH-2.0-Cisco-1.25\",\"cipher_alg\":\"aes256-cbc\",\"mac_alg\":\"hmac-sha1\",\"compression_alg\":\"none\",\"kex_alg\":\"diffie-hellman-group1-sha1\",\"host_key_alg\":\"ssh-rsa\",\"host_key\":\"5e:cc:b4:b2:e1:8e:c4:f9:aa:62:f4:bf:2a:a8:92:fb\",\"hasshVersion\":\"1.1\",\"hassh\":\"e37f354a101aff5871ba233aa82b84ec\",\"hasshServer\":\"3cc67862bceac0f334c62ad1b76895b4\",\"cshka\":\"ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,ssh-dss\",\"hasshAlgorithms\":\"curve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1;aes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc;hmac-sha2-256,hmac-sha2-512,hmac-sha1;none\",\"sshka\":\"ssh-rsa\",\"hasshServerAlgorithms\":\"diffie-hellman-group1-sha1;aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc;hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96;none\"}",
+    "tags": [
+      "ssh"
+    ],
+    "pipeline": "ssh",
+    "input": {
+      "type": "log"
+    },
+    "observer": {
+      "name": "onionknight"
+    },
+    "@timestamp": "2023-11-03T16:05:15.911Z",
+    "ecs": {
+      "version": "8.0.0"
+    },
+    "data_stream": {
+      "namespace": "so",
+      "type": "logs",
+      "dataset": "zeek"
+    },
+    "client": {
+      "port": "59190",
+      "ip": "8.218.180.96"
+    },
+    "event": {
+      "ingested": "2023-11-03T16:05:25.141Z",
+      "module": "zeek",
+      "category": "network",
+      "dataset": "zeek.ssh"
+    },
+    "hash": {
+      "hassh": "e37f354a101aff5871ba233aa82b84ec"
+    }
+  },
+  "fields": {
+    "ssh.version": [
+      2
+    ],
+    "log.id.uid": [
+      "CZ6XXNMhZz6wbmVKg"
+    ],
+    "elastic_agent.version": [
+      "8.8.2"
+    ],
+    "event.category": [
+      "network"
+    ],
+    "event.category.keyword": [
+      "network"
+    ],
+    "event.dataset.keyword": [
+      "zeek.ssh"
+    ],
+    "server.ip": [
+      "192.168.1.65"
+    ],
+    "ssh.authentication.attempts": [
+      0
+    ],
+    "container.id": [
+      "ssh.log"
+    ],
+    "ssh.hassh_server_algorithms": [
+      "diffie-hellman-group1-sha1;aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc;hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96;none"
+    ],
+    "ssh.hassh_server": [
+      "3cc67862bceac0f334c62ad1b76895b4"
+    ],
+    "ecs.version.keyword": [
+      "8.0.0"
+    ],
+    "ssh.compression_algorithm": [
+      "none"
+    ],
+    "source.geo.region_name": [
+      "Central and Western District"
+    ],
+    "ssh.mac_algorithm": [
+      "hmac-sha1"
+    ],
+    "source.ip": [
+      "8.218.180.96"
+    ],
+    "source.geo.region_iso_code": [
+      "HK-HCW"
+    ],
+    "source_geo.network": [
+      "8.218.0.0/15"
+    ],
+    "source.geo.city_name": [
+      "Hong Kong"
+    ],
+    "source.port.keyword": [
+      "59190"
+    ],
+    "source_geo.asn": [
+      45102
+    ],
+    "ssh.host_key": [
+      "5e:cc:b4:b2:e1:8e:c4:f9:aa:62:f4:bf:2a:a8:92:fb"
+    ],
+    "input.type": [
+      "log"
+    ],
+    "ssh.host_key_algorithm": [
+      "ssh-rsa"
+    ],
+    "log.offset": [
+      14048
+    ],
+    "client.ip": [
+      "8.218.180.96"
+    ],
+    "data_stream.type": [
+      "logs"
+    ],
+    "ssh.server_host_key_algorithms": [
+      "ssh-rsa"
+    ],
+    "tags": [
+      "ssh"
+    ],
+    "ssh.cipher_algorithm": [
+      "aes256-cbc"
+    ],
+    "destination.ip.keyword": [
+      "192.168.1.65"
+    ],
+    "source.port": [
+      59190
+    ],
+    "ecs.version": [
+      "8.0.0"
+    ],
+    "client.port": [
+      59190
+    ],
+    "source.geo.timezone": [
+      "Asia/Hong_Kong"
+    ],
+    "message.keyword": [
+      "{\"ts\":1699027515.911595,\"uid\":\"CZ6XXNMhZz6wbmVKg\",\"id.orig_h\":\"8.218.180.96\",\"id.orig_p\":59190,\"id.resp_h\":\"192.168.1.65\",\"id.resp_p\":22,\"version\":2,\"auth_attempts\":0,\"direction\":\"INBOUND\",\"client\":\"SSH-2.0-libssh_0.7.4\",\"server\":\"SSH-2.0-Cisco-1.25\",\"cipher_alg\":\"aes256-cbc\",\"mac_alg\":\"hmac-sha1\",\"compression_alg\":\"none\",\"kex_alg\":\"diffie-hellman-group1-sha1\",\"host_key_alg\":\"ssh-rsa\",\"host_key\":\"5e:cc:b4:b2:e1:8e:c4:f9:aa:62:f4:bf:2a:a8:92:fb\",\"hasshVersion\":\"1.1\",\"hassh\":\"e37f354a101aff5871ba233aa82b84ec\",\"hasshServer\":\"3cc67862bceac0f334c62ad1b76895b4\",\"cshka\":\"ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,ssh-dss\",\"hasshAlgorithms\":\"curve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1;aes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc;hmac-sha2-256,hmac-sha2-512,hmac-sha1;none\",\"sshka\":\"ssh-rsa\",\"hasshServerAlgorithms\":\"diffie-hellman-group1-sha1;aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc;hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96;none\"}"
+    ],
+    "event.module.keyword": [
+      "zeek"
+    ],
+    "source.ip.keyword": [
+      "8.218.180.96"
+    ],
+    "ssh.hassh_algorithms": [
+      "curve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1;aes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc;hmac-sha2-256,hmac-sha2-512,hmac-sha1;none"
+    ],
+    "destination.port": [
+      22
+    ],
+    "observer.name": [
+      "onionknight"
+    ],
+    "tags.keyword": [
+      "ssh"
+    ],
+    "source.geo.location": [
+      {
+        "coordinates": [
+          114.1759,
+          22.2842
+        ],
+        "type": "Point"
+      }
+    ],
+    "ssh.hassh_version": [
+      "1.1"
+    ],
+    "observer.name.keyword": [
+      "onionknight"
+    ],
+    "event.module": [
+      "zeek"
+    ],
+    "hash.hassh": [
+      "e37f354a101aff5871ba233aa82b84ec"
+    ],
+    "ssh.client": [
+      "SSH-2.0-libssh_0.7.4"
+    ],
+    "source_geo.ip": [
+      "8.218.180.96"
+    ],
+    "source.geo.country_iso_code": [
+      "HK"
+    ],
+    "server.port": [
+      22
+    ],
+    "source.geo.ip": [
+      "8.218.180.96"
+    ],
+    "event.ingested.keyword": [
+      "2023-11-03T16:05:25.141Z"
+    ],
+    "elastic_agent.snapshot": [
+      false
+    ],
+    "destination.port.keyword": [
+      "22"
+    ],
+    "elastic_agent.id": [
+      "df990f14-d46c-48b8-8959-84745839c4e1"
+    ],
+    "data_stream.namespace": [
+      "so"
+    ],
+    "source.geo.continent_name": [
+      "Asia"
+    ],
+    "source_geo.ip.keyword": [
+      "8.218.180.96"
+    ],
+    "message": [
+      "{\"ts\":1699027515.911595,\"uid\":\"CZ6XXNMhZz6wbmVKg\",\"id.orig_h\":\"8.218.180.96\",\"id.orig_p\":59190,\"id.resp_h\":\"192.168.1.65\",\"id.resp_p\":22,\"version\":2,\"auth_attempts\":0,\"direction\":\"INBOUND\",\"client\":\"SSH-2.0-libssh_0.7.4\",\"server\":\"SSH-2.0-Cisco-1.25\",\"cipher_alg\":\"aes256-cbc\",\"mac_alg\":\"hmac-sha1\",\"compression_alg\":\"none\",\"kex_alg\":\"diffie-hellman-group1-sha1\",\"host_key_alg\":\"ssh-rsa\",\"host_key\":\"5e:cc:b4:b2:e1:8e:c4:f9:aa:62:f4:bf:2a:a8:92:fb\",\"hasshVersion\":\"1.1\",\"hassh\":\"e37f354a101aff5871ba233aa82b84ec\",\"hasshServer\":\"3cc67862bceac0f334c62ad1b76895b4\",\"cshka\":\"ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,ssh-dss\",\"hasshAlgorithms\":\"curve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1;aes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc;hmac-sha2-256,hmac-sha2-512,hmac-sha1;none\",\"sshka\":\"ssh-rsa\",\"hasshServerAlgorithms\":\"diffie-hellman-group1-sha1;aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc;hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96;none\"}"
+    ],
+    "destination.ip": [
+      "192.168.1.65"
+    ],
+    "pipeline": [
+      "ssh"
+    ],
+    "event.ingested": [
+      "2023-11-03T16:05:25.141Z"
+    ],
+    "@timestamp": [
+      "2023-11-03T16:05:15.911Z"
+    ],
+    "source_geo.organization_name": [
+      "Alibaba US Technology Co., Ltd."
+    ],
+    "log.file.path": [
+      "/nsm/zeek/logs/current/ssh.log"
+    ],
+    "data_stream.dataset": [
+      "zeek"
+    ],
+    "source.geo.country_name.keyword": [
+      "Hong Kong"
+    ],
+    "ssh.kex_algorithm": [
+      "diffie-hellman-group1-sha1"
+    ],
+    "source.geo.ip.keyword": [
+      "8.218.180.96"
+    ],
+    "source.geo.country_name": [
+      "Hong Kong"
+    ],
+    "ssh.direction": [
+      "INBOUND"
+    ],
+    "event.dataset": [
+      "zeek.ssh"
+    ],
+    "ssh.client_host_key_algorithms": [
+      "ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,ssh-dss"
+    ],
+    "ssh.server": [
+      "SSH-2.0-Cisco-1.25"
+    ]
+  }
+}
