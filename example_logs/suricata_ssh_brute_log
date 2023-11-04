@@ -1,0 +1,339 @@
+{
+  "_index": ".ds-logs-suricata-so-2023.10.26-000001",
+  "_id": "pZntlYsB2fbLpb1f9gKL",
+  "_version": 2,
+  "_score": 0,
+  "_source": {
+    "log": {
+      "file": {
+        "path": "/nsm/suricata/eve-2023-11-03-15:59.json"
+      },
+      "offset": 2994,
+      "id": {
+        "uid": "1035386056342342"
+      }
+    },
+    "elastic_agent": {
+      "id": "df990f14-d46c-48b8-8959-84745839c4e1",
+      "version": "8.8.2",
+      "snapshot": false
+    },
+    "destination": {
+      "port": 22,
+      "ip": "192.168.1.65"
+    },
+    "source_geo": {
+      "ip": "8.218.180.96",
+      "organization_name": "Alibaba US Technology Co., Ltd.",
+      "asn": 45102,
+      "network": "8.218.0.0/15"
+    },
+    "rule": {
+      "severity": 1,
+      "reference": "https://doc.emergingthreats.net/2006546",
+      "rev": 9,
+      "metadata": {
+        "updated_at": [
+          "2010_07_30"
+        ],
+        "created_at": [
+          "2010_07_30"
+        ]
+      },
+      "gid": 1,
+      "name": "ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack",
+      "ruleset": "Emerging Threats",
+      "action": "allowed",
+      "rule": "alert ssh $EXTERNAL_NET any -> $HOME_NET 22 (msg:\"ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack\"; flow:established,to_server; content:\"SSH-\"; content:\"libssh\"; within:20; threshold: type both, count 5, seconds 30, track by_src; reference:url,doc.emergingthreats.net/2006546; classtype:attempted-admin; sid:2006546; rev:9; metadata:created_at 2010_07_30, updated_at 2010_07_30;)",
+      "category": "Attempted Administrator Privilege Gain",
+      "uuid": "2006546"
+    },
+    "source": {
+      "geo": {
+        "region_iso_code": "HK-HCW",
+        "continent_name": "Asia",
+        "city_name": "Hong Kong",
+        "country_iso_code": "HK",
+        "timezone": "Asia/Hong_Kong",
+        "ip": "8.218.180.96",
+        "country_name": "Hong Kong",
+        "region_name": "Central and Western District",
+        "location": {
+          "lon": 114.1759,
+          "lat": 22.2842
+        }
+      },
+      "port": 55262,
+      "ip": "8.218.180.96"
+    },
+    "message": "{\"timestamp\":\"2023-11-03T16:04:41.340281+0000\",\"flow_id\":1035386056342342,\"in_iface\":\"bond0\",\"event_type\":\"alert\",\"src_ip\":\"8.218.180.96\",\"src_port\":55262,\"dest_ip\":\"192.168.1.65\",\"dest_port\":22,\"proto\":\"TCP\",\"community_id\":\"1:1LlyWvX5meFqQhteinctvxxqxv8=\",\"alert\":{\"action\":\"allowed\",\"gid\":1,\"signature_id\":2006546,\"rev\":9,\"signature\":\"ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack\",\"category\":\"Attempted Administrator Privilege Gain\",\"severity\":1,\"metadata\":{\"created_at\":[\"2010_07_30\"],\"updated_at\":[\"2010_07_30\"]},\"rule\":\"alert ssh $EXTERNAL_NET any -> $HOME_NET 22 (msg:\\\"ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack\\\"; flow:established,to_server; content:\\\"SSH-\\\"; content:\\\"libssh\\\"; within:20; threshold: type both, count 5, seconds 30, track by_src; reference:url,doc.emergingthreats.net/2006546; classtype:attempted-admin; sid:2006546; rev:9; metadata:created_at 2010_07_30, updated_at 2010_07_30;)\"},\"app_proto\":\"ssh\",\"payload_printable\":\"SSH-2.0-libssh_0.7.4\\r\\n....\\n...N...&`..m.?C.....fcurve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1...Wssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,ssh-dss...Jaes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc...Jaes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc...%hmac-sha2-256,hmac-sha2-512,hmac-sha1...%hmac-sha2-256,hmac-sha2-512,hmac-sha1....none....none.................................y.H0Slys./!.....k..vu4h=.c.P.xJ...[I.R....../....\\\".\\\".q..^...+.R[.T.......Q....r...\\n.o..Z$&=....8+.\\\\........j.J.....d..w......}.X......\",\"stream\":1,\"packet\":\"fJXzRRhA7MMCFXQBCABFAAAogTBAADIGSHwI2rRgwKgBQdfeABYh6DmQSItF91AReXD1TwAAAAAAAAAA\",\"packet_info\":{\"linktype\":1}}",
+    "network": {
+      "community_id": "1:1LlyWvX5meFqQhteinctvxxqxv8=",
+      "data": {
+        "decoded": "SSH-2.0-libssh_0.7.4\r\n....\n...N...&`..m.?C.....fcurve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1...Wssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,ssh-dss...Jaes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc...Jaes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc...%hmac-sha2-256,hmac-sha2-512,hmac-sha1...%hmac-sha2-256,hmac-sha2-512,hmac-sha1....none....none.................................y.H0Slys./!.....k..vu4h=.c.P.xJ...[I.R....../....\".\".q..^...+.R[.T.......Q....r...\n.o..Z$&=....8+.\\........j.J.....d..w......}.X......"
+      },
+      "transport": "TCP"
+    },
+    "tags": [
+      "alert",
+      "alert"
+    ],
+    "input": {
+      "type": "log"
+    },
+    "observer": {
+      "name": "onionknight"
+    },
+    "@timestamp": "2023-11-03T16:04:41.340Z",
+    "ecs": {
+      "version": "8.0.0"
+    },
+    "data_stream": {
+      "namespace": "so",
+      "type": "logs",
+      "dataset": "suricata"
+    },
+    "event": {
+      "severity": 3,
+      "ingested": "2023-11-03T16:04:41.493Z",
+      "acknowledged": true,
+      "module": "suricata",
+      "escalated": true,
+      "category": "network",
+      "dataset": "suricata.alert",
+      "severity_label": "high"
+    }
+  },
+  "fields": {
+    "log.id.uid": [
+      "1035386056342342"
+    ],
+    "event.category": [
+      "network"
+    ],
+    "elastic_agent.version": [
+      "8.8.2"
+    ],
+    "rule.reference": [
+      "https://doc.emergingthreats.net/2006546"
+    ],
+    "event.category.keyword": [
+      "network"
+    ],
+    "event.dataset.keyword": [
+      "suricata.alert"
+    ],
+    "rule.metadata.updated_at": [
+      "2010_07_30"
+    ],
+    "ecs.version.keyword": [
+      "8.0.0"
+    ],
+    "rule.ruleset": [
+      "Emerging Threats"
+    ],
+    "source.geo.region_name": [
+      "Central and Western District"
+    ],
+    "source.ip": [
+      "8.218.180.96"
+    ],
+    "network.community_id": [
+      "1:1LlyWvX5meFqQhteinctvxxqxv8="
+    ],
+    "source.geo.region_iso_code": [
+      "HK-HCW"
+    ],
+    "source_geo.network": [
+      "8.218.0.0/15"
+    ],
+    "network.data.decoded": [
+      "SSH-2.0-libssh_0.7.4\r\n....\n...N...&`..m.?C.....fcurve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1...Wssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,ssh-dss...Jaes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc...Jaes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc...%hmac-sha2-256,hmac-sha2-512,hmac-sha1...%hmac-sha2-256,hmac-sha2-512,hmac-sha1....none....none.................................y.H0Slys./!.....k..vu4h=.c.P.xJ...[I.R....../....\".\".q..^...+.R[.T.......Q....r...\n.o..Z$&=....8+.\\........j.J.....d..w......}.X......"
+    ],
+    "source.geo.city_name": [
+      "Hong Kong"
+    ],
+    "rule.name.keyword": [
+      "ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack"
+    ],
+    "rule.gid": [
+      1
+    ],
+    "event.severity": [
+      3
+    ],
+    "rule.metadata.created_at": [
+      "2010_07_30"
+    ],
+    "source.port.keyword": [
+      "55262"
+    ],
+    "rule.name": [
+      "ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack"
+    ],
+    "source_geo.asn": [
+      45102
+    ],
+    "input.type": [
+      "log"
+    ],
+    "log.offset": [
+      2994
+    ],
+    "data_stream.type": [
+      "logs"
+    ],
+    "tags": [
+      "alert",
+      "alert"
+    ],
+    "destination.ip.keyword": [
+      "192.168.1.65"
+    ],
+    "source.port": [
+      55262
+    ],
+    "ecs.version": [
+      "8.0.0"
+    ],
+    "rule.rule": [
+      "alert ssh $EXTERNAL_NET any -> $HOME_NET 22 (msg:\"ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack\"; flow:established,to_server; content:\"SSH-\"; content:\"libssh\"; within:20; threshold: type both, count 5, seconds 30, track by_src; reference:url,doc.emergingthreats.net/2006546; classtype:attempted-admin; sid:2006546; rev:9; metadata:created_at 2010_07_30, updated_at 2010_07_30;)"
+    ],
+    "source.geo.timezone": [
+      "Asia/Hong_Kong"
+    ],
+    "message.keyword": [
+      "{\"timestamp\":\"2023-11-03T16:04:41.340281+0000\",\"flow_id\":1035386056342342,\"in_iface\":\"bond0\",\"event_type\":\"alert\",\"src_ip\":\"8.218.180.96\",\"src_port\":55262,\"dest_ip\":\"192.168.1.65\",\"dest_port\":22,\"proto\":\"TCP\",\"community_id\":\"1:1LlyWvX5meFqQhteinctvxxqxv8=\",\"alert\":{\"action\":\"allowed\",\"gid\":1,\"signature_id\":2006546,\"rev\":9,\"signature\":\"ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack\",\"category\":\"Attempted Administrator Privilege Gain\",\"severity\":1,\"metadata\":{\"created_at\":[\"2010_07_30\"],\"updated_at\":[\"2010_07_30\"]},\"rule\":\"alert ssh $EXTERNAL_NET any -> $HOME_NET 22 (msg:\\\"ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack\\\"; flow:established,to_server; content:\\\"SSH-\\\"; content:\\\"libssh\\\"; within:20; threshold: type both, count 5, seconds 30, track by_src; reference:url,doc.emergingthreats.net/2006546; classtype:attempted-admin; sid:2006546; rev:9; metadata:created_at 2010_07_30, updated_at 2010_07_30;)\"},\"app_proto\":\"ssh\",\"payload_printable\":\"SSH-2.0-libssh_0.7.4\\r\\n....\\n...N...&`..m.?C.....fcurve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1...Wssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,ssh-dss...Jaes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc...Jaes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc...%hmac-sha2-256,hmac-sha2-512,hmac-sha1...%hmac-sha2-256,hmac-sha2-512,hmac-sha1....none....none.................................y.H0Slys./!.....k..vu4h=.c.P.xJ...[I.R....../....\\\".\\\".q..^...+.R[.T.......Q....r...\\n.o..Z$&=....8+.\\\\........j.J.....d..w......}.X......\",\"stream\":1,\"packet\":\"fJXzRRhA7MMCFXQBCABFAAAogTBAADIGSHwI2rRgwKgBQdfeABYh6DmQSItF91AReXD1TwAAAAAAAAAA\",\"packet_info\":{\"linktype\":1}}"
+    ],
+    "event.module.keyword": [
+      "suricata"
+    ],
+    "event.severity_label": [
+      "high"
+    ],
+    "source.ip.keyword": [
+      "8.218.180.96"
+    ],
+    "rule.rev": [
+      9
+    ],
+    "rule.action": [
+      "allowed"
+    ],
+    "destination.port": [
+      22
+    ],
+    "observer.name": [
+      "onionknight"
+    ],
+    "tags.keyword": [
+      "alert",
+      "alert"
+    ],
+    "rule.severity": [
+      1
+    ],
+    "rule.category.keyword": [
+      "Attempted Administrator Privilege Gain"
+    ],
+    "source.geo.location": [
+      {
+        "coordinates": [
+          114.1759,
+          22.2842
+        ],
+        "type": "Point"
+      }
+    ],
+    "observer.name.keyword": [
+      "onionknight"
+    ],
+    "event.module": [
+      "suricata"
+    ],
+    "event.severity_label.keyword": [
+      "high"
+    ],
+    "source.geo.country_iso_code": [
+      "HK"
+    ],
+    "source_geo.ip": [
+      "8.218.180.96"
+    ],
+    "event.acknowledged": [
+      true
+    ],
+    "source.geo.ip": [
+      "8.218.180.96"
+    ],
+    "event.ingested.keyword": [
+      "2023-11-03T16:04:41.493Z"
+    ],
+    "elastic_agent.snapshot": [
+      false
+    ],
+    "destination.port.keyword": [
+      "22"
+    ],
+    "event.escalated": [
+      true
+    ],
+    "elastic_agent.id": [
+      "df990f14-d46c-48b8-8959-84745839c4e1"
+    ],
+    "data_stream.namespace": [
+      "so"
+    ],
+    "source.geo.continent_name": [
+      "Asia"
+    ],
+    "source_geo.ip.keyword": [
+      "8.218.180.96"
+    ],
+    "network.transport.keyword": [
+      "TCP"
+    ],
+    "message": [
+      "{\"timestamp\":\"2023-11-03T16:04:41.340281+0000\",\"flow_id\":1035386056342342,\"in_iface\":\"bond0\",\"event_type\":\"alert\",\"src_ip\":\"8.218.180.96\",\"src_port\":55262,\"dest_ip\":\"192.168.1.65\",\"dest_port\":22,\"proto\":\"TCP\",\"community_id\":\"1:1LlyWvX5meFqQhteinctvxxqxv8=\",\"alert\":{\"action\":\"allowed\",\"gid\":1,\"signature_id\":2006546,\"rev\":9,\"signature\":\"ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack\",\"category\":\"Attempted Administrator Privilege Gain\",\"severity\":1,\"metadata\":{\"created_at\":[\"2010_07_30\"],\"updated_at\":[\"2010_07_30\"]},\"rule\":\"alert ssh $EXTERNAL_NET any -> $HOME_NET 22 (msg:\\\"ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack\\\"; flow:established,to_server; content:\\\"SSH-\\\"; content:\\\"libssh\\\"; within:20; threshold: type both, count 5, seconds 30, track by_src; reference:url,doc.emergingthreats.net/2006546; classtype:attempted-admin; sid:2006546; rev:9; metadata:created_at 2010_07_30, updated_at 2010_07_30;)\"},\"app_proto\":\"ssh\",\"payload_printable\":\"SSH-2.0-libssh_0.7.4\\r\\n....\\n...N...&`..m.?C.....fcurve25519-sha256@libssh.org,ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1...Wssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,ssh-dss...Jaes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc...Jaes256-ctr,aes192-ctr,aes128-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc...%hmac-sha2-256,hmac-sha2-512,hmac-sha1...%hmac-sha2-256,hmac-sha2-512,hmac-sha1....none....none.................................y.H0Slys./!.....k..vu4h=.c.P.xJ...[I.R....../....\\\".\\\".q..^...+.R[.T.......Q....r...\\n.o..Z$&=....8+.\\\\........j.J.....d..w......}.X......\",\"stream\":1,\"packet\":\"fJXzRRhA7MMCFXQBCABFAAAogTBAADIGSHwI2rRgwKgBQdfeABYh6DmQSItF91AReXD1TwAAAAAAAAAA\",\"packet_info\":{\"linktype\":1}}"
+    ],
+    "destination.ip": [
+      "192.168.1.65"
+    ],
+    "network.transport": [
+      "TCP"
+    ],
+    "rule.uuid": [
+      "2006546"
+    ],
+    "event.ingested": [
+      "2023-11-03T16:04:41.493Z"
+    ],
+    "@timestamp": [
+      "2023-11-03T16:04:41.340Z"
+    ],
+    "source_geo.organization_name": [
+      "Alibaba US Technology Co., Ltd."
+    ],
+    "data_stream.dataset": [
+      "suricata"
+    ],
+    "log.file.path": [
+      "/nsm/suricata/eve-2023-11-03-15:59.json"
+    ],
+    "source.geo.country_name.keyword": [
+      "Hong Kong"
+    ],
+    "source.geo.ip.keyword": [
+      "8.218.180.96"
+    ],
+    "source.geo.country_name": [
+      "Hong Kong"
+    ],
+    "rule.category": [
+      "Attempted Administrator Privilege Gain"
+    ],
+    "event.dataset": [
+      "suricata.alert"
+    ]
+  }
+}
