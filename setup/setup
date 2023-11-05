@@ -1,0 +1,24 @@
+********************
+Planning
+********************
+Before I imaged the actual Security Onion PC, I had to do a few other things in preparation.
+  1. Decide which verison of Security Onion to install
+  2. Ensure that my network topology was organized correctly to capture all traffic
+
+Security Onion Version:
+Security Onion offers several different installation architectures. 
+The "Import" version did not seem like a good option becuase you have to manually upload PCAP files yourself, instead of capturing live network traffic.
+I decieded to go with the "Evaluation" version because it gives you a good feel for what Security Onion has to offer. The only downside is that you can't install additional Elastic agents on to end devices.
+You can find all the information here:
+https://docs.securityonion.net/en/latest/architecture.html
+
+The image download is all the same, but you will be prompted what architecture you want to install during setup.
+
+
+
+Network Topology:
+Ensuring that you are capturing ALL network traffic is very important. 
+When I first went to set up my topology, I had the realization that I was not actually capturing my wireless data.
+In order to avoid that you need to make sure that when your wireless traffic you will have to have another wireless network product, besides your ISP router.
+I have Google Nest with the main router and one hub spot. You will need to make sure that the wireless router is connected to your switch so that the data on your wireless network actually hits the mirror port interface for the Security Onion to sniff.
+Here is my topology for an example.
