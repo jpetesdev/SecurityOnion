@@ -27,3 +27,8 @@ Here is my topology for an example: https://github.com/jpetesdev/SecurityOnion/b
 
 The Google Nest router is connected to the separate Wifi Network and then to the Wired network. So, it handles all the routing between the two.
 
+*************************
+Configuring the Switch
+*************************
+Switch Info:
+Cisco Catalyst 2960 PoE 52 Port
